@@ -56,7 +56,7 @@ CLIP_EXTRACTIONS = {
     "almost_every_day": {
         "file": "audio/matt 1.m4a",
         "start": 623.84,  # "Even with Teflon..."
-        "end": 642.50,    # "...perfect shape of a fried egg and you're done."
+        "end": 638.82,    # "...perfect shape of a fried egg and you're done." (complete)
         "padding": 500
     },
     "give_to_mom": {
