@@ -38,7 +38,7 @@ CLIP_EXTRACTIONS = {
     "beautiful_object": {
         "file": "audio/matt 1.m4a",
         "start": 296.70,  # "Once you hold it, once you feel it..."
-        "end": 335.69,    # "...buy more or use it for everything." (FULL combined quote)
+        "end": 335.69,    # "...buy more or use it for everything."
         "padding": 500
     },
     "two_minutes_twenty_seconds": {
@@ -75,18 +75,6 @@ CLIP_EXTRACTIONS = {
         "file": "audio/matt 1.m4a",
         "start": 1906.00,  # Context before
         "end": 1918.22,    # "...the seasoning perfect."
-        "padding": 500
-    },
-    "more_meaningful": {
-        "file": "audio/matt 1.m4a",
-        "start": 296.70,  # "Once you hold it, once you feel it..."
-        "end": 335.69,    # "...buy more or use it for everything." (FULL combined quote)
-        "padding": 500
-    },
-    "pride_in_what_you_made": {
-        "file": "audio/matt 1.m4a",
-        "start": 296.70,  # "Once you hold it, once you feel it..."
-        "end": 335.69,    # "...buy more or use it for everything." (FULL combined quote)
         "padding": 500
     },
     # From matt 2.m4a (New-Recording JSON)
