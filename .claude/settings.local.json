@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(sed:*)",
+      "Bash(chmod:*)",
+      "Bash(./extract_all_scripts.sh:*)",
+      "Bash(python:*)",
+      "Bash(find:*)",
+      "Bash(open:*)",
+      "Bash(pip3 install:*)",
+      "Bash(source transcribe_env/bin/activate:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(cat:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Field Ad Quote Candidates\n\nAdded ad quote extraction and player system:\n- ad_quotes_player.html - Interactive web player for 26 ad quote candidates\n- ad_quote_candidates.md - Organized list of quotes by theme\n- audio_clip_scripts.md - Full context scripts for each quote\n- ad_clips/ - Directory for audio files (to be added)\n\nAlso includes original transcription and extraction tools from interview recordings.\n\n🤖 Generated with Claude Code (https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(gh:*)",
+      "Bash(pip install:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git remote set-url:*)",
+      "Bash(done)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

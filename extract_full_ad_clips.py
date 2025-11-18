@@ -98,8 +98,8 @@ CLIP_EXTRACTIONS = {
     },
     "it_unlocked_me": {
         "file": "audio/matt 2.m4a",
-        "start": 216.59,   # "And I was cooking some stuff..."
-        "end": 226.27,     # "...grill in the backyard."
+        "start": 207.89,   # "All of this just started happening..."
+        "end": 225.95,     # "...grill in the backyard." (complete)
         "padding": 500
     },
     "make_food_confident": {
