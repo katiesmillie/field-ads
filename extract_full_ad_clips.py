@@ -126,6 +126,43 @@ CLIP_EXTRACTIONS = {
         "end": 242.23,     # "...Coleman stove."
         "padding": 500
     },
+    # Final 6 clips from matt 1.m4a
+    "worth_it": {
+        "file": "audio/matt 1.m4a",
+        "start": 462.17,   # "Love it more..."
+        "end": 473.77,     # "...it was worth it."
+        "padding": 500
+    },
+    "retaining_flavor": {
+        "file": "audio/matt 1.m4a",
+        "start": 642.50,   # Context before
+        "end": 662.42,     # "...retaining it all."
+        "padding": 500
+    },
+    "almost_foolproof": {
+        "file": "audio/matt 1.m4a",
+        "start": 1303.75,  # "I think the more you cook..."
+        "end": 1319.75,    # "...almost foolproof."
+        "padding": 500
+    },
+    "tool_that_can_do_so_much": {
+        "file": "audio/matt 1.m4a",
+        "start": 1810.00,  # Context before
+        "end": 1829.56,    # "...cooking that you never knew existed."
+        "padding": 500
+    },
+    "hold_it_feel_it": {
+        "file": "audio/matt 1.m4a",
+        "start": 295.06,   # "Like seeing..."
+        "end": 306.46,     # "...hang it on the wall."
+        "padding": 500
+    },
+    "comfortable_using_it": {
+        "file": "audio/matt 1.m4a",
+        "start": 1057.44,  # "But it's literally cast iron..."
+        "end": 1073.68,    # "...to fry eggs."
+        "padding": 500
+    },
 }
 
 def extract_clip(clip_name, config, output_dir="ad_clips"):
