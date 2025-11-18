@@ -11,7 +11,9 @@ env/
 # Audio files (too large for git)
 *.m4a
 *.mp3
+# Allow wav files in ad_clips directory
 *.wav
+!ad_clips/*.wav
 
 # OS files
 .DS_Store
