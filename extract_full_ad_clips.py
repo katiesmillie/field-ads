@@ -77,39 +77,39 @@ CLIP_EXTRACTIONS = {
         "end": 1918.22,    # "...the seasoning perfect."
         "padding": 500
     },
-    # From matt 2.m4a (New-Recording JSON)
+    # From matt 3.m4a (New-Recording JSON)
     "every_morning": {
-        "file": "audio/matt 2.m4a",
+        "file": "audio/matt 3.m4a",
         "start": 186.85,   # "And because it made me want to cook more..."
         "end": 195.29,     # "...I've gotten really good at them."
         "padding": 500
     },
     "it_unlocked_me": {
-        "file": "audio/matt 2.m4a",
+        "file": "audio/matt 3.m4a",
         "start": 216.59,   # "And I was cooking some stuff, but I just."
         "end": 225.95,     # "...grill in the backyard." (complete)
         "padding": 500
     },
     "make_food_confident": {
-        "file": "audio/matt 2.m4a",
+        "file": "audio/matt 3.m4a",
         "start": 235.63,   # "I just kind of made it, so..."
         "end": 289.17,     # "...every morning and every night." (complete)
         "padding": 500
     },
     "never_tried_that": {
-        "file": "audio/matt 2.m4a",
+        "file": "audio/matt 3.m4a",
         "start": 183.04,   # "So it made me want to cook more..."
         "end": 205.01,     # "...flip them in the air." (complete)
         "padding": 500
     },
     "her_dad_makes_food": {
-        "file": "audio/matt 2.m4a",
+        "file": "audio/matt 3.m4a",
         "start": 205.65,   # "I make pancakes on my griddle..."
         "end": 219.23,     # "...not just moms."
         "padding": 500
     },
     "brought_anywhere": {
-        "file": "audio/matt 2.m4a",
+        "file": "audio/matt 3.m4a",
         "start": 235.63,   # "I just kind of made it..."
         "end": 242.23,     # "...Coleman stove."
         "padding": 500
