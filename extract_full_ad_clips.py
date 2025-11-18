@@ -104,14 +104,14 @@ CLIP_EXTRACTIONS = {
     },
     "make_food_confident": {
         "file": "audio/matt 2.m4a",
-        "start": 260.55,   # "But anyway..."
-        "end": 291.09,     # Full quote about daughter
+        "start": 235.63,   # "I just kind of made it, so..."
+        "end": 289.17,     # "...every morning and every night." (complete)
         "padding": 500
     },
     "never_tried_that": {
         "file": "audio/matt 2.m4a",
-        "start": 197.81,   # "I can flip fried eggs..."
-        "end": 205.65,     # "...flip them in the air."
+        "start": 183.04,   # "So it made me want to cook more..."
+        "end": 205.01,     # "...flip them in the air." (complete)
         "padding": 500
     },
     "her_dad_makes_food": {
