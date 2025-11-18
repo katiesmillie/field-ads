@@ -67,8 +67,8 @@ CLIP_EXTRACTIONS = {
     },
     "my_efforts_made_it_epic": {
         "file": "audio/matt 1.m4a",
-        "start": 1884.00,  # Context before "My..."
-        "end": 1893.74,    # "...that pan epic."
+        "start": 1880.14,  # "And it's funny how you can get attached to it..."
+        "end": 1891.66,    # "...my efforts made that pan epic." (FULL quote)
         "padding": 500
     },
     "seasoning_perfect": {
