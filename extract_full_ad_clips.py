@@ -53,6 +53,42 @@ CLIP_EXTRACTIONS = {
         "end": 242.00,    # "...you don't take my word for it."
         "padding": 500
     },
+    "almost_every_day": {
+        "file": "audio/matt 1.m4a",
+        "start": 623.84,  # "Even with Teflon..."
+        "end": 642.50,    # "...perfect shape of a fried egg and you're done."
+        "padding": 500
+    },
+    "give_to_mom": {
+        "file": "audio/matt 1.m4a",
+        "start": 988.36,  # Context before
+        "end": 1016.49,   # "...making her life easier."
+        "padding": 500
+    },
+    "my_efforts_made_it_epic": {
+        "file": "audio/matt 1.m4a",
+        "start": 1884.00,  # Context before "My..."
+        "end": 1893.74,    # "...that pan epic."
+        "padding": 500
+    },
+    "seasoning_perfect": {
+        "file": "audio/matt 1.m4a",
+        "start": 1906.00,  # Context before
+        "end": 1918.22,    # "...the seasoning perfect."
+        "padding": 500
+    },
+    "more_meaningful": {
+        "file": "audio/matt 1.m4a",
+        "start": 306.46,   # "And I think when you're holding..."
+        "end": 337.37,     # "...use it for everything."
+        "padding": 500
+    },
+    "pride_in_what_you_made": {
+        "file": "audio/matt 1.m4a",
+        "start": 306.46,   # "And I think when you're holding..."
+        "end": 326.57,     # "...by the seasoning or the imperfections."
+        "padding": 500
+    },
 }
 
 def extract_clip(clip_name, config, output_dir="ad_clips"):
