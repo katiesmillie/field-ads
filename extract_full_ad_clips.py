@@ -37,8 +37,8 @@ CLIP_EXTRACTIONS = {
     },
     "beautiful_object": {
         "file": "audio/matt 1.m4a",
-        "start": 299.58,  # "The way you have that set up..."
-        "end": 326.57,    # "...by the seasoning or the imperfections."
+        "start": 296.70,  # "Once you hold it, once you feel it..."
+        "end": 335.69,    # "...buy more or use it for everything." (FULL combined quote)
         "padding": 500
     },
     "two_minutes_twenty_seconds": {
@@ -79,14 +79,14 @@ CLIP_EXTRACTIONS = {
     },
     "more_meaningful": {
         "file": "audio/matt 1.m4a",
-        "start": 306.46,   # "And I think when you're holding..."
-        "end": 337.37,     # "...use it for everything."
+        "start": 296.70,  # "Once you hold it, once you feel it..."
+        "end": 335.69,    # "...buy more or use it for everything." (FULL combined quote)
         "padding": 500
     },
     "pride_in_what_you_made": {
         "file": "audio/matt 1.m4a",
-        "start": 306.46,   # "And I think when you're holding..."
-        "end": 326.57,     # "...by the seasoning or the imperfections."
+        "start": 296.70,  # "Once you hold it, once you feel it..."
+        "end": 335.69,    # "...buy more or use it for everything." (FULL combined quote)
         "padding": 500
     },
     # From matt 2.m4a (New-Recording JSON)
