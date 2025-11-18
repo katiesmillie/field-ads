@@ -31,8 +31,8 @@ CLIP_EXTRACTIONS = {
     },
     "buying_intentionally": {
         "file": "audio/matt 1.m4a",
-        "start": 506.50,  # "There's something really meaningful..."
-        "end": 514.62,    # "...journey in your life."
+        "start": 503.26,  # "There's something really meaningful..."
+        "end": 518.33,    # "...journey in your life." (FULL quote)
         "padding": 500
     },
     "beautiful_object": {
