@@ -89,6 +89,43 @@ CLIP_EXTRACTIONS = {
         "end": 326.57,     # "...by the seasoning or the imperfections."
         "padding": 500
     },
+    # From matt 2.m4a (New-Recording JSON)
+    "every_morning": {
+        "file": "audio/matt 2.m4a",
+        "start": 186.85,   # "And because it made me want to cook more..."
+        "end": 195.29,     # "...I've gotten really good at them."
+        "padding": 500
+    },
+    "it_unlocked_me": {
+        "file": "audio/matt 2.m4a",
+        "start": 216.59,   # "And I was cooking some stuff..."
+        "end": 226.27,     # "...grill in the backyard."
+        "padding": 500
+    },
+    "make_food_confident": {
+        "file": "audio/matt 2.m4a",
+        "start": 260.55,   # "But anyway..."
+        "end": 291.09,     # Full quote about daughter
+        "padding": 500
+    },
+    "never_tried_that": {
+        "file": "audio/matt 2.m4a",
+        "start": 197.81,   # "I can flip fried eggs..."
+        "end": 205.65,     # "...flip them in the air."
+        "padding": 500
+    },
+    "her_dad_makes_food": {
+        "file": "audio/matt 2.m4a",
+        "start": 205.65,   # "I make pancakes on my griddle..."
+        "end": 219.23,     # "...not just moms."
+        "padding": 500
+    },
+    "brought_anywhere": {
+        "file": "audio/matt 2.m4a",
+        "start": 235.63,   # "I just kind of made it..."
+        "end": 242.23,     # "...Coleman stove."
+        "padding": 500
+    },
 }
 
 def extract_clip(clip_name, config, output_dir="ad_clips"):
