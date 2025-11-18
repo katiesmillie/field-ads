@@ -86,7 +86,7 @@ CLIP_EXTRACTIONS = {
     },
     "it_unlocked_me": {
         "file": "audio/matt 2.m4a",
-        "start": 186.85,   # "And because it made me want to cook more..."
+        "start": 216.59,   # "And I was cooking some stuff, but I just."
         "end": 225.95,     # "...grill in the backyard." (complete)
         "padding": 500
     },
