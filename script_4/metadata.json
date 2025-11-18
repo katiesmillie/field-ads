@@ -1,0 +1,36 @@
+{
+  "script_name": "script_4",
+  "source_file": "audio/matt 3.m4a",
+  "clips": [
+    {
+      "clip_number": 1,
+      "quote": "I think the assumption is like, it's like extra work.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 2,
+      "quote": "I've even timed it before the cleanup from making eggs. I swear, 2 minutes and 20 seconds, re oiled and ready, back on the stove to cook again.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 3,
+      "quote": "It's way different than even the nuance of cleaning your stainless steel.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 4,
+      "quote": "I realized that you didn't need to be so precious. Every time I cooked the seasoning and all those changes happen naturally.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 5,
+      "quote": "I think by cooking with it, I've noticed that the seasoning gets darker and it's building more and more layers, and it's getting even more nonstick.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 6,
+      "quote": "Which makes it almost foolproof that you can cook with it easily every time.",
+      "status": "not_found"
+    }
+  ]
+}

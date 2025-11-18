@@ -1,0 +1,45 @@
+{
+  "script_name": "script_3",
+  "source_file": "audio/matt 3.m4a",
+  "clips": [
+    {
+      "clip_number": 1,
+      "quote": "Cast iron is kind of a gateway drug to the more intentional... a life worth living.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 2,
+      "quote": "I think because I wanted to figure out how to cook with cast iron because it felt like it was worth it. The knowledge that you might pass it down from generation to generation.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 3,
+      "quote": "You might bring it to a friend's house to do something with it and cook a meal that they couldn't cook before. I think it shows you that investing in it really makes it worth it.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 4,
+      "quote": "Not just because it's non toxic, not because it's non stick. But even if you bought all those, you know, in another type of pan with a coating, I don't think you'd be bringing it on adventures, bringing it to your friend's house.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 5,
+      "quote": "There's something really meaningful that it's an heirloom and it'll be with you forever. And I think that kind of starts to make you think about not consuming as much and buying things very intentionally that you think will also have that type of journey in your life.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 6,
+      "filename": "script_3_clip_06.wav",
+      "quote": "It unlocked me being really comfortable. And we do go car camping, and we do use the grill in the backyard.",
+      "matched_text": "it unlocked me being really comfortable and We do go car camping and we do use the grill on the backyard",
+      "match_score": 98,
+      "start_time_seconds": 219.06,
+      "end_time_seconds": 225.62,
+      "start_ms": 218560,
+      "end_ms": 226120,
+      "duration_ms": 7560,
+      "padding_ms": 500,
+      "status": "success"
+    }
+  ]
+}

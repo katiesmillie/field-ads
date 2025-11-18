@@ -1,0 +1,49 @@
+{
+  "script_name": "script_5",
+  "source_file": "audio/matt 3.m4a",
+  "clips": [
+    {
+      "clip_number": 1,
+      "filename": "script_5_clip_01.wav",
+      "quote": "And now it's really meaningful to have my daughter, who is three, only know the version of someone who, like, literally can just, like, make food at any time and feel confident.",
+      "matched_text": "And now it's really meaningful to have my daughter who is three only know the version of someone who like literally can just like make food at any time and feel confident",
+      "match_score": 98,
+      "start_time_seconds": 263.6,
+      "end_time_seconds": 274.34,
+      "start_ms": 263100,
+      "end_ms": 274840,
+      "duration_ms": 11740,
+      "padding_ms": 500,
+      "status": "success"
+    },
+    {
+      "clip_number": 2,
+      "filename": "script_5_clip_02.wav",
+      "quote": "And make cool meals that we all like eating and not being intimidated by the tool that you're using, because I can use it for everything, and the cleanup is fast, and I just use it every morning and every night.",
+      "matched_text": "and make cool meals that we all like eating and not being intimidated by the tool that you're using because I can use it for everything. And the cleanup is fast and I just use it every morning and every night.",
+      "match_score": 99,
+      "start_time_seconds": 274.34,
+      "end_time_seconds": 289.14,
+      "start_ms": 273840,
+      "end_ms": 289640,
+      "duration_ms": 15800,
+      "padding_ms": 500,
+      "status": "success"
+    },
+    {
+      "clip_number": 3,
+      "quote": "I make a fried egg almost every day now. And with the smaller field skillets, you can literally crack an egg or two in some of them, and it keeps a perfect shape of a fried egg and you're done.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 4,
+      "quote": "I think the start of cooking with cast iron was always scrambled eggs.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 5,
+      "quote": "Cast iron has changed my life. I'm a better dad.",
+      "status": "not_found"
+    }
+  ]
+}

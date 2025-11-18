@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Field Cast Iron Scripts - Audio Player</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 0.9em;
+        }
+
+        .script {
+            margin-bottom: 50px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 30px;
+        }
+
+        .script:last-child {
+            border-bottom: none;
+        }
+
+        .script-title {
+            color: #2c5f2d;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .clip {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #fafafa;
+            border-radius: 6px;
+            border-left: 3px solid #97bc62;
+        }
+
+        .clip-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .clip-number {
+            font-weight: bold;
+            color: #2c5f2d;
+            font-size: 0.9em;
+        }
+
+        .clip-text {
+            color: #333;
+            margin-bottom: 12px;
+            font-size: 1.05em;
+        }
+
+        audio {
+            width: 100%;
+            height: 40px;
+            outline: none;
+        }
+
+        audio::-webkit-media-controls-panel {
+            background-color: #f0f0f0;
+        }
+
+        .summary {
+            background-color: #e8f4e8;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 40px;
+            border-left: 4px solid #2c5f2d;
+        }
+
+        .summary h3 {
+            color: #2c5f2d;
+            margin-bottom: 10px;
+        }
+
+        .summary ul {
+            list-style-position: inside;
+            color: #555;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .script-title {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Field Cast Iron Scripts</h1>
+        <p class="subtitle">Audio clips from Matt's interview about cast iron cooking</p>
+
+        <!-- SCRIPT 1 -->
+        <div class="script">
+            <h2 class="script-title">Script 1</h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 1</span>
+                </div>
+                <p class="clip-text">I had had other skillets like Lodge, cheaper, and I never felt connected to it enough to try to figure it out as much as I did with Field, because it felt so beautiful and smooth.</p>
+                <audio controls preload="metadata">
+                    <source src="script_1/script_1_clip_01a.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 2</span>
+                </div>
+                <p class="clip-text">And so I think something about that inspired me.</p>
+                <audio controls preload="metadata">
+                    <source src="script_1/script_1_clip_02a.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 3</span>
+                </div>
+                <p class="clip-text">I started making scrambled eggs in it. And it was easy and they were nonstick, and it started to give me more and more confidence.</p>
+                <audio controls preload="metadata">
+                    <source src="script_1/script_1_clip_03a.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 4</span>
+                </div>
+                <p class="clip-text">I make a fried egg almost every day now. And with the smaller field skillets, you can literally crack an egg or two in some of them, and it keeps a perfect shape of a fried egg and you're done.</p>
+                <audio controls preload="metadata">
+                    <source src="script_1/script_1_clip_04.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 5</span>
+                </div>
+                <p class="clip-text">Cast iron has changed my life. I'm a better dad.</p>
+                <audio controls preload="metadata">
+                    <source src="script_1/script_1_clip_05.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <!-- SCRIPT 2 -->
+        <div class="script">
+            <h2 class="script-title">Script 2</h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 2</span>
+                </div>
+                <p class="clip-text">I think the start of cooking with cast iron was always scrambled eggs. It seems like that seems to be the test of what non stick means to someone.</p>
+                <audio controls preload="metadata">
+                    <source src="script_2/script_2_clip_02.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 3</span>
+                </div>
+                <p class="clip-text">And I think once you figure out that you can get a nonstick surface from cast iron, then you're not, you know, worried.</p>
+                <audio controls preload="metadata">
+                    <source src="script_2/script_2_clip_03.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 4</span>
+                </div>
+                <p class="clip-text">So I think those gateways led me to cast iron chicken in the oven. It led me to sauteing mushrooms and vegetables.</p>
+                <audio controls preload="metadata">
+                    <source src="script_2/script_2_clip_04.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 5</span>
+                </div>
+                <p class="clip-text">I literally never used three pans at once, or even two. And just the connection to it made me start getting more creative.</p>
+                <audio controls preload="metadata">
+                    <source src="script_2/script_2_clip_05a.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <!-- SCRIPT 3 -->
+        <div class="script">
+            <h2 class="script-title">Script 3</h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 1</span>
+                </div>
+                <p class="clip-text">Cast iron is kind of a gateway drug to the more intentional... a life worth living.</p>
+                <audio controls preload="metadata">
+                    <source src="script_3/script_3_clip_01.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 2</span>
+                </div>
+                <p class="clip-text">I think because I wanted to figure out how to cook with cast iron because it felt like it was worth it. The knowledge that you might pass it down from generation to generation.</p>
+                <audio controls preload="metadata">
+                    <source src="script_3/script_3_clip_02.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 3</span>
+                </div>
+                <p class="clip-text">You might bring it to a friend's house to do something with it and cook a meal that they couldn't cook before. I think it shows you that investing in it really makes it worth it.</p>
+                <audio controls preload="metadata">
+                    <source src="script_3/script_3_clip_03.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 4</span>
+                </div>
+                <p class="clip-text">Not just because it's non toxic, not because it's non stick. But even if you bought all those, you know, in another type of pan with a coating, I don't think you'd be bringing it on adventures, bringing it to your friend's house.</p>
+                <audio controls preload="metadata">
+                    <source src="script_3/script_3_clip_04.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 5</span>
+                </div>
+                <p class="clip-text">There's something really meaningful that it's an heirloom and it'll be with you forever. And I think that kind of starts to make you think about not consuming as much and buying things very intentionally that you think will also have that type of journey in your life.</p>
+                <audio controls preload="metadata">
+                    <source src="script_3/script_3_clip_05.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 6</span>
+                </div>
+                <p class="clip-text">It unlocked me being really comfortable. And we do go car camping, and we do use the grill in the backyard.</p>
+                <audio controls preload="metadata">
+                    <source src="script_3/script_3_clip_06.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <!-- SCRIPT 4 -->
+        <div class="script">
+            <h2 class="script-title">Script 4</h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 2</span>
+                </div>
+                <p class="clip-text">I've even timed it before the cleanup from making eggs. I swear, 2 minutes and 20 seconds, re oiled and ready, back on the stove to cook again.</p>
+                <audio controls preload="metadata">
+                    <source src="script_4/script_4_clip_02.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 3</span>
+                </div>
+                <p class="clip-text">It's way different than even the nuance of cleaning your stainless steel.</p>
+                <audio controls preload="metadata">
+                    <source src="script_4/script_4_clip_03.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 4</span>
+                </div>
+                <p class="clip-text">I realized that you didn't need to be so precious. Every time I cooked the seasoning and all those changes happen naturally.</p>
+                <audio controls preload="metadata">
+                    <source src="script_4/script_4_clip_04.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 5</span>
+                </div>
+                <p class="clip-text">I think by cooking with it, I've noticed that the seasoning gets darker and it's building more and more layers, and it's getting even more nonstick.</p>
+                <audio controls preload="metadata">
+                    <source src="script_4/script_4_clip_05.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 6</span>
+                </div>
+                <p class="clip-text">Which makes it almost foolproof that you can cook with it easily every time.</p>
+                <audio controls preload="metadata">
+                    <source src="script_4/script_4_clip_06.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <!-- SCRIPT 5 -->
+        <div class="script">
+            <h2 class="script-title">Script 5</h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 1</span>
+                </div>
+                <p class="clip-text">And now it's really meaningful to have my daughter, who is three, only know the version of someone who, like, literally can just, like, make food at any time and feel confident.</p>
+                <audio controls preload="metadata">
+                    <source src="script_5/script_5_clip_01.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 2</span>
+                </div>
+                <p class="clip-text">And make cool meals that we all like eating and not being intimidated by the tool that you're using, because I can use it for everything, and the cleanup is fast, and I just use it every morning and every night.</p>
+                <audio controls preload="metadata">
+                    <source src="script_5/script_5_clip_02.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 3</span>
+                </div>
+                <p class="clip-text">I make a fried egg almost every day now. And with the smaller field skillets, you can literally crack an egg or two in some of them, and it keeps a perfect shape of a fried egg and you're done.</p>
+                <audio controls preload="metadata">
+                    <source src="script_5/script_5_clip_03.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 4</span>
+                </div>
+                <p class="clip-text">I think the start of cooking with cast iron was always scrambled eggs.</p>
+                <audio controls preload="metadata">
+                    <source src="script_5/script_5_clip_04.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 5</span>
+                </div>
+                <p class="clip-text">Cast iron has changed my life. I'm a better dad.</p>
+                <audio controls preload="metadata">
+                    <source src="script_5/script_5_clip_05.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <!-- SCRIPT 6 -->
+        <div class="script">
+            <h2 class="script-title">Script 6</h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 1</span>
+                </div>
+                <p class="clip-text">Usually when people bring up cast iron, they tell me that they found a skillet that's cheaper, and they wonder what the difference in the price would be.</p>
+                <audio controls preload="metadata">
+                    <source src="script_6/script_6_clip_01.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 2</span>
+                </div>
+                <p class="clip-text">And until they really touch it and feel it and feel the weight or the smoothness of the bottom, they don't really understand in the handle and the way it feels in your hand, they don't really understand the difference in cooking on a surface that's maybe more rough.</p>
+                <audio controls preload="metadata">
+                    <source src="script_6/script_6_clip_02.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 3</span>
+                </div>
+                <p class="clip-text">Once you hold it, once you feel it, like, if those. The way you have that set up in that room, it's like, literally, you could just hang it on the wall if that's all you want to do with it. It is a beautiful object.</p>
+                <audio controls preload="metadata">
+                    <source src="script_6/script_6_clip_03.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 4</span>
+                </div>
+                <p class="clip-text">And I think when you're holding the less expensive ones, you can really tell the difference, and you can tell that it is heavier, it's harder to use.</p>
+                <audio controls preload="metadata">
+                    <source src="script_6/script_6_clip_04.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 5</span>
+                </div>
+                <p class="clip-text">And maybe there's a sense of pride in the beauty of the object and then what you made that object into by the seasoning or the imperfections.</p>
+                <audio controls preload="metadata">
+                    <source src="script_6/script_6_clip_05.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 6</span>
+                </div>
+                <p class="clip-text">And I think that's why cast iron seems more meaningful and why once you start using it, you want to buy more or use it for everything.</p>
+                <audio controls preload="metadata">
+                    <source src="script_6/script_6_clip_06.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <!-- SCRIPT 7 -->
+        <div class="script">
+            <h2 class="script-title">Script 7</h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 1</span>
+                </div>
+                <p class="clip-text">A year ago my wife was the one who cooked and I would make a few meals. But when I cook, it's meat sauce and spaghetti, which is once a week.</p>
+                <audio controls preload="metadata">
+                    <source src="script_7/script_7_clip_01.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 2</span>
+                </div>
+                <p class="clip-text">We've always been against toxic pans and I never would buy the ceramic ones or any of the other brands that were saying they were non toxic because it still feel... We were already using non toxic pans and I would never buy the ceramic coated ones, even though it seemed like the easiest way to get non stick stick.</p>
+                <audio controls preload="metadata">
+                    <source src="script_7/script_7_clip_02.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 3</span>
+                </div>
+                <p class="clip-text">But I eventually got some really nice stainless steel pans and I really perfected the preheat, the oil or whatever and cooking. So I was already getting more comfortable with cooking because of stainless steel.</p>
+                <audio controls preload="metadata">
+                    <source src="script_7/script_7_clip_03.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 4</span>
+                </div>
+                <p class="clip-text">But stainless steel doesn't make you feel like you're. You're not bringing it with you camping. You're not. It's probably not going to last your whole life because you're going to make it gnarly. It just wasn't the same type of experience.</p>
+                <audio controls preload="metadata">
+                    <source src="script_7/script_7_clip_04.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 5</span>
+                </div>
+                <p class="clip-text">By knowing that everything I cooked on a cast iron was going to be a part of its journey or I could reset it at any time.</p>
+                <audio controls preload="metadata">
+                    <source src="script_7/script_7_clip_05.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 6</span>
+                </div>
+                <p class="clip-text">So I already started getting into cooking because of stainless steel and I was getting more comfortable with non stick that way. And after Teflon was banned from this house, I never tried any other surface because I knew they were all going to be scratched.</p>
+                <audio controls preload="metadata">
+                    <source src="script_7/script_7_clip_06.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <!-- SCRIPT 8 -->
+        <div class="script">
+            <h2 class="script-title">Script 8</h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 1</span>
+                </div>
+                <p class="clip-text">I gifted my mom a number four field skillet for her birthday which is not true. I just gifted it to her.</p>
+                <audio controls preload="metadata">
+                    <source src="script_8/script_8_clip_01.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 2</span>
+                </div>
+                <p class="clip-text">I gave my mom a number four skillet as a gift and she also isn't comfortable in the kitchen and I think by me doing was exciting to use what I think helped me in the kitchen to give to my mom and get her in that rhythm of maybe even just frying an egg every morning or making her life easier.</p>
+                <audio controls preload="metadata">
+                    <source src="script_8/script_8_clip_02.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 3</span>
+                </div>
+                <p class="clip-text">And I think she went through the same type of experience where you might think it's way harder than it is and I think by telling her you can't do it wrong and as long as you follow the preheat step in the oil step. Like, cooking with cast iron is very easy.</p>
+                <audio controls preload="metadata">
+                    <source src="script_8/script_8_clip_03.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 4</span>
+                </div>
+                <p class="clip-text">And I do remember her first impression of after she cooked, wondering if she did it wrong. Like, the same fears that I had.</p>
+                <audio controls preload="metadata">
+                    <source src="script_8/script_8_clip_04.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 5</span>
+                </div>
+                <p class="clip-text">And so I think my excitement and my new knowledge, I pass it on to my mom and she's now comfortable using it and likes using it to fry eggs.</p>
+                <audio controls preload="metadata">
+                    <source src="script_8/script_8_clip_05.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <!-- SCRIPT 9 -->
+        <div class="script">
+            <h2 class="script-title">Script 9</h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 1</span>
+                </div>
+                <p class="clip-text">I think that's why cast iron seems more meaningful and why once you start using it, you want to buy more or use it for everything.</p>
+                <audio controls preload="metadata">
+                    <source src="script_9/script_9_clip_01.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 2</span>
+                </div>
+                <p class="clip-text">I feel like the adventure cooking. I'm asking you a question almost while I say it, but the adventurous cooking is more of being comfortable with cooking. The adventure, I guess, is trying to sear the steak that I've never done.</p>
+                <audio controls preload="metadata">
+                    <source src="script_9/script_9_clip_02.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 3</span>
+                </div>
+                <p class="clip-text">I think the adventurous cooking also when you get into cast iron is trusting that you can go from pancakes and then just throw some eggs on it.</p>
+                <audio controls preload="metadata">
+                    <source src="script_9/script_9_clip_03.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 4</span>
+                </div>
+                <p class="clip-text">And, you know, the same way you'd cook at a diner or a really epic restaurant where they're using a griddle, you realize you can just throw anything on it and it doesn't matter how clean clean it is or if you clean it in between.</p>
+                <audio controls preload="metadata">
+                    <source src="script_9/script_9_clip_04.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 5</span>
+                </div>
+                <p class="clip-text">And that is another really awesome benefit of using the griddles and cast iron in general is you can make a ton of stuff and you don't have to be precious about it.</p>
+                <audio controls preload="metadata">
+                    <source src="script_9/script_9_clip_05.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <!-- SCRIPT 10 -->
+        <div class="script">
+            <h2 class="script-title">Script 10</h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 1</span>
+                </div>
+                <p class="clip-text">Sometimes I yell, I'll clean it, because I have a thing. Like, I love doing it.</p>
+                <audio controls preload="metadata">
+                    <source src="script_10/script_10_clip_01.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 2</span>
+                </div>
+                <p class="clip-text">I really like knowing that I cleaned it properly and reset it and it's ready to go for the next person. And that doesn't mean it's hard to do or special. It's just the way I've kept the seasoning perfect.</p>
+                <audio controls preload="metadata">
+                    <source src="script_10/script_10_clip_02.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 3</span>
+                </div>
+                <p class="clip-text">You take a pride in cast iron, where you've worked so hard on the seasoning, and you're really proud of it, and it's even and perfect.</p>
+                <audio controls preload="metadata">
+                    <source src="script_10/script_10_clip_03.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 4</span>
+                </div>
+                <p class="clip-text">It's like my efforts made that pan epic.</p>
+                <audio controls preload="metadata">
+                    <source src="script_10/script_10_clip_04.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-number">Clip 5</span>
+                </div>
+                <p class="clip-text">I can clean that thing and be done with it after using it in less than two minutes. No different than scrubbing any other pan.</p>
+                <audio controls preload="metadata">
+                    <source src="script_10/script_10_clip_05a.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <div class="summary">
+            <h3>Summary</h3>
+            <ul>
+                <li>Total Scripts: 10</li>
+                <li>Total Clips: 55</li>
+                <li>Source: audio/matt 3.m4a</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

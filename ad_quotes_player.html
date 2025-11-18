@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Field Ad Quote Candidates - Audio Player</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c5f2d;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1em;
+            font-style: italic;
+        }
+
+        .category {
+            margin-bottom: 50px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 30px;
+        }
+
+        .category:last-child {
+            border-bottom: none;
+        }
+
+        .category-title {
+            color: #2c5f2d;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #97bc62;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .category-icon {
+            font-size: 1.2em;
+        }
+
+        .clip {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fafafa;
+            border-radius: 8px;
+            border-left: 4px solid #97bc62;
+        }
+
+        .clip-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .clip-title {
+            font-weight: bold;
+            color: #2c5f2d;
+            font-size: 1.1em;
+        }
+
+        .clip-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85em;
+            color: #666;
+        }
+
+        .clip-duration {
+            background: #e8f5e9;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+
+        .clip-speaker {
+            background: #f5f5f5;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+
+        .clip-text {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.05em;
+            line-height: 1.8;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #97bc62 0%, #97bc62 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 40%;
+            background-position: 0 85%;
+            font-weight: 600;
+            padding: 2px 0;
+        }
+
+        .audio-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        audio {
+            flex: 1;
+            height: 40px;
+            outline: none;
+        }
+
+        audio::-webkit-media-controls-panel {
+            background-color: #f0f0f0;
+        }
+
+        .download-btn {
+            background: #2c5f2d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: 600;
+            transition: background 0.3s;
+            white-space: nowrap;
+        }
+
+        .download-btn:hover {
+            background: #1e4620;
+        }
+
+        .download-btn:active {
+            background: #163318;
+        }
+
+        .production-notes {
+            background: #fff9e6;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        .production-notes h3 {
+            color: #2c5f2d;
+            margin-bottom: 10px;
+        }
+
+        .production-notes ul {
+            margin-left: 20px;
+        }
+
+        .production-notes li {
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .audio-note {
+            margin-top: 10px;
+            padding: 10px;
+            background: #fff3cd;
+            border-left: 3px solid #ffc107;
+            border-radius: 4px;
+            font-size: 0.85em;
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Field Cast Iron - Ad Quote Candidates</h1>
+        <p class="subtitle">Inspirational snippets for heartfelt visual storytelling</p>
+
+        <div class="audio-note" style="margin-bottom: 30px;">
+            <strong>Note:</strong> Audio files should be placed in the <code>ad_clips/</code> directory. Once audio files are added, playback and download will work automatically.
+        </div>
+
+        <!-- CATEGORY: HEIRLOOM & LEGACY -->
+        <div class="category">
+            <h2 class="category-title">
+                <span class="category-icon">🏛️</span>
+                Heirloom & Legacy
+            </h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">An Heirloom Forever</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~30 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">Not just because it's non toxic, not because it's non stick. But even if you bought all those, you know, in another type of pan with a coating, I don't think you'd be bringing it on adventures, bringing it to your friend's house. <span class="highlight">There's something really meaningful that it's an heirloom and it'll be with you forever.</span> And I think that kind of starts to make you think about not consuming as much and buying things very intentionally that you think will also have that type of journey in your life.</p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/heirloom_forever.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/heirloom_forever.wav', 'heirloom_forever.wav')">Download</button>
+                </div>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">Generation to Generation</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~20 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">I think because I wanted to figure out how to cook with cast iron because it felt like it was worth it. <span class="highlight">The knowledge that you might pass it down from generation to generation.</span> You might bring it to a friend's house to do something with it and cook a meal that they couldn't cook before.</p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/generation_to_generation.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/generation_to_generation.wav', 'generation_to_generation.wav')">Download</button>
+                </div>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">Buying Things Intentionally</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~30 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">There's something really meaningful that it's an heirloom and it'll be with you forever. <span class="highlight">And I think that kind of starts to make you think about not consuming as much and buying things very intentionally that you think will also have that type of journey in your life.</span></p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/buying_intentionally.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/buying_intentionally.wav', 'buying_intentionally.wav')">Download</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORY: BEAUTY & CRAFT -->
+        <div class="category">
+            <h2 class="category-title">
+                <span class="category-icon">✨</span>
+                Beauty & Craft
+            </h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">A Beautiful Object</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~25 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">Once you hold it, once you feel it, like, if those. The way you have that set up in that room, it's like, literally, you could just hang it on the wall if that's all you want to do with it. <span class="highlight">It is a beautiful object.</span> And I think when you're holding the less expensive ones, you can really tell the difference, and you can tell that it is heavier, it's harder to use, and maybe there's a sense of pride in the beauty of the object and then what you made that object into by the seasoning or the imperfections.</p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/beautiful_object.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/beautiful_object.wav', 'beautiful_object.wav')">Download</button>
+                </div>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">Pride in What You Made</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~25 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">It is a beautiful object. And I think when you're holding the less expensive ones, you can really tell the difference, and you can tell that it is heavier, it's harder to use, and <span class="highlight">maybe there's a sense of pride in the beauty of the object and then what you made that object into by the seasoning or the imperfections.</span></p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/pride_in_what_you_made.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/pride_in_what_you_made.wav', 'pride_in_what_you_made.wav')">Download</button>
+                </div>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">More Meaningful</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~20 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">And maybe there's a sense of pride in the beauty of the object and then what you made that object into by the seasoning or the imperfections. <span class="highlight">And I think that's why cast iron seems more meaningful and why once you start using it, you want to buy more or use it for everything.</span></p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/more_meaningful.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/more_meaningful.wav', 'more_meaningful.wav')">Download</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORY: PERSONAL PRIDE & OWNERSHIP -->
+        <div class="category">
+            <h2 class="category-title">
+                <span class="category-icon">💪</span>
+                Personal Pride & Ownership
+            </h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">My Efforts Made That Pan Epic</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~15 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">And it's funny how you can get attached to it like no other piece of cookware when someone else uses it because I made it. My. <span class="highlight">It's like my efforts made that pan epic.</span></p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/my_efforts_made_it_epic.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/my_efforts_made_it_epic.wav', 'my_efforts_made_it_epic.wav')">Download</button>
+                </div>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">Kept the Seasoning Perfect</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~20 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">Sometimes I yell, I'll clean it, because I have a thing. Like, I love doing it. I. Yeah, I really like knowing that I cleaned it properly and reset it and it's ready to go for the next person. And that doesn't mean it's hard to do or special. <span class="highlight">It's just the way I've kept the seasoning perfect.</span></p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/seasoning_perfect.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/seasoning_perfect.wav', 'seasoning_perfect.wav')">Download</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORY: UNLOCKING CONFIDENCE -->
+        <div class="category">
+            <h2 class="category-title">
+                <span class="category-icon">🔓</span>
+                Unlocking Confidence
+            </h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">It Unlocked Me</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~20 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">So it made me want to cook more. And because it made me want to cook more, I started getting a lot more into it and a lot more comfortable. <span class="highlight">It unlocked me being really comfortable.</span> And we do go car camping, and we do use the grill in the backyard.</p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/it_unlocked_me.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/it_unlocked_me.wav', 'it_unlocked_me.wav')">Download</button>
+                </div>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">Make Food and Feel Confident</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~35 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">And now it's really meaningful to have my daughter, who is three, only know the version of someone who, like, literally can just, like, <span class="highlight">make food at any time and feel confident</span> and make cool meals that we all like eating and not being intimidated by the tool that you're using, because I can use it for everything, and the cleanup is fast, and I just use it every morning and every night.</p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/make_food_confident.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/make_food_confident.wav', 'make_food_confident.wav')">Download</button>
+                </div>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">Never Tried That</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~25 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">I make scrambled eggs every morning. I've gotten really good at them. You want them fluffy? I can do anything. I can flip fried eggs in the air. <span class="highlight">I'd never tried that.</span> I'd never had it so nonstick that I could just, like, flip them in the air.</p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/never_tried_that.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/never_tried_that.wav', 'never_tried_that.wav')">Download</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORY: EVERYDAY RITUALS -->
+        <div class="category">
+            <h2 class="category-title">
+                <span class="category-icon">☀️</span>
+                Everyday Rituals
+            </h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">Every Morning</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~15 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">So it made me want to cook more. And because it made me want to cook more, I started getting a lot more into it and a lot more comfortable. <span class="highlight">I make scrambled eggs every morning.</span> I've gotten really good at them.</p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/every_morning.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/every_morning.wav', 'every_morning.wav')">Download</button>
+                </div>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">Almost Every Day Now</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~20 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">Even with Teflon, I wasn't enjoying or making fried eggs. <span class="highlight">I make a fried egg almost every day now.</span> And with the smaller field skillets, you can literally crack an egg or two in some of them, and it keeps a perfect shape of a fried egg and you're done.</p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/almost_every_day.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/almost_every_day.wav', 'almost_every_day.wav')">Download</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORY: FAMILY & GENERATIONAL CONNECTION -->
+        <div class="category">
+            <h2 class="category-title">
+                <span class="category-icon">👨‍👩‍👧</span>
+                Family & Generational Connection
+            </h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">Her Dad Makes Food Too</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~15 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">All of this just started happening, especially when I got a kid, because <span class="highlight">I wanted to have her know that her dad makes all this food, too, and not just moms.</span> And I was cooking some stuff, but I just. It unlocked me being really comfortable.</p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/her_dad_makes_food.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/her_dad_makes_food.wav', 'her_dad_makes_food.wav')">Download</button>
+                </div>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">Give to My Mom</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~20 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">I gave my mom a number four skillet as a gift and she also isn't comfortable in the kitchen and I think by me doing was <span class="highlight">exciting to use what I think helped me in the kitchen to give to my mom</span> and get her in that rhythm of maybe even just frying an egg every morning or making her life easier.</p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/give_to_mom.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/give_to_mom.wav', 'give_to_mom.wav')">Download</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORY: SIMPLICITY & EASE -->
+        <div class="category">
+            <h2 class="category-title">
+                <span class="category-icon">⚡</span>
+                Simplicity & Ease
+            </h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">2 Minutes and 20 Seconds</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~15 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">And so when I show people how easy it is, I've even timed it before the cleanup from making eggs. <span class="highlight">I swear, 2 minutes and 20 seconds, re oiled and ready, back on the stove to cook again.</span> It's way different than even the nuance of cleaning your stainless steel.</p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/two_minutes_twenty_seconds.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/two_minutes_twenty_seconds.wav', 'two_minutes_twenty_seconds.wav')">Download</button>
+                </div>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">She's Comfortable Using It</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~15 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">But it's literally cast iron, which is not precious. And so I think my excitement and my new knowledge, <span class="highlight">I pass it on to my mom and she's now comfortable using it and likes using it to fry eggs.</span></p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/comfortable_using_it.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/comfortable_using_it.wav', 'comfortable_using_it.wav')">Download</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORY: GATEWAY TO INTENTIONALITY -->
+        <div class="category">
+            <h2 class="category-title">
+                <span class="category-icon">🚪</span>
+                Gateway to Intentionality
+            </h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">It Felt Like It Was Worth It</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~15 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">I think because I wanted to figure out how to cook with cast iron because <span class="highlight">it felt like it was worth it.</span></p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/worth_it.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/worth_it.wav', 'worth_it.wav')">Download</button>
+                </div>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">Investing Makes It Worth It</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~15 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">You might bring it to a friend's house to do something with it and cook a meal that they couldn't cook before. <span class="highlight">I think it shows you that investing in it really makes it worth it.</span> Not just because it's non toxic, not because it's non stick.</p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/investing_worth_it.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/investing_worth_it.wav', 'investing_worth_it.wav')">Download</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORY: VERSATILITY & ADVENTURE -->
+        <div class="category">
+            <h2 class="category-title">
+                <span class="category-icon">🏕️</span>
+                Versatility & Adventure
+            </h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">Brought It Anywhere I Could</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~10 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">I just kind of made it, so. <span class="highlight">So I brought it anywhere I could.</span> And when we go car camping, I would bring my Coleman stove.</p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/brought_anywhere.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/brought_anywhere.wav', 'brought_anywhere.wav')">Download</button>
+                </div>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">Retaining All the Flavor</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~15 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">So I think those gateways led me to cast iron chicken in the oven. It led me to sauteing mushrooms and vegetables. And I. <span class="highlight">The flavor you get out of it and cooking burgers and not having all the flavor go into the barbecue grill and retaining it all.</span></p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/retaining_flavor.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/retaining_flavor.wav', 'retaining_flavor.wav')">Download</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORY: TRANSFORMATION & JOURNEY -->
+        <div class="category">
+            <h2 class="category-title">
+                <span class="category-icon">🌱</span>
+                Transformation & Journey
+            </h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">Almost Foolproof</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~20 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">I think the more you cook with it, I've noticed that the seasoning gets darker and it's building more and more layers, and <span class="highlight">it's getting even more nonstick, which makes it almost foolproof that you can cook with it easily.</span></p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/almost_foolproof.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/almost_foolproof.wav', 'almost_foolproof.wav')">Download</button>
+                </div>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">A Tool That Can Do So Much</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~15 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">You just get to seek out this whole new world of cooking that you never knew existed. So that is a lot of. Yeah. <span class="highlight">Just weird to get a tool that can do so much</span> and to almost get to seek out this whole new world of cooking that you never knew existed.</p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/tool_that_can_do_so_much.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/tool_that_can_do_so_much.wav', 'tool_that_can_do_so_much.wav')">Download</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORY: TOUCH & SENSORY EXPERIENCE -->
+        <div class="category">
+            <h2 class="category-title">
+                <span class="category-icon">🤲</span>
+                Touch & Sensory Experience
+            </h2>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">See It to Believe It</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~20 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">And until they really touch it and feel it and feel the weight or the smoothness of the bottom, they don't really understand in the handle and the way it feels in your hand, they don't really understand the difference in cooking on a surface that's maybe more rough. <span class="highlight">You got to see it to believe it, and you don't take my word for it.</span></p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/see_to_believe.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/see_to_believe.wav', 'see_to_believe.wav')">Download</button>
+                </div>
+            </div>
+
+            <div class="clip">
+                <div class="clip-header">
+                    <span class="clip-title">Once You Hold It, Once You Feel It</span>
+                    <div class="clip-meta">
+                        <span class="clip-speaker">Matt</span>
+                        <span class="clip-duration">~15 sec</span>
+                    </div>
+                </div>
+                <p class="clip-text">Once you interact with this skillet, you're like. This is like. Like seeing. <span class="highlight">Once you hold it, once you feel it,</span> like, if those. The way you have that set up in that room, it's like, literally, you could just hang it on the wall if that's all you want to do with it.</p>
+                <div class="audio-controls">
+                    <audio controls preload="metadata">
+                        <source src="ad_clips/hold_it_feel_it.wav" type="audio/wav">
+                    </audio>
+                    <button class="download-btn" onclick="downloadAudio('ad_clips/hold_it_feel_it.wav', 'hold_it_feel_it.wav')">Download</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCTION NOTES -->
+        <div class="production-notes">
+            <h3>📋 Production Notes</h3>
+            <p><strong>Best Standalone Clips (Shortest, Most Impactful):</strong></p>
+            <ul>
+                <li>"Generation to Generation" (20s) - Perfect for heritage/legacy theme</li>
+                <li>"My Efforts Made That Pan Epic" (15s) - Personal ownership angle</li>
+                <li>"Every Morning" (15s) - Daily ritual simplicity</li>
+                <li>"2 Minutes and 20 Seconds" (15s) - Practical ease of use</li>
+                <li>"See It to Believe It" (20s) - Tactile quality emphasis</li>
+            </ul>
+            <p style="margin-top: 15px;"><strong>Best for Emotional Storytelling (Deeper Narratives):</strong></p>
+            <ul>
+                <li>"An Heirloom Forever" (30s) - Full heritage story</li>
+                <li>"Make Food at Any Time and Feel Confident" (35s) - Parenting/confidence arc</li>
+                <li>"Her Dad Makes Food Too" (15s) - Modern family values</li>
+                <li>"A Beautiful Object" (25s) - Craft and quality appreciation</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function downloadAudio(src, filename) {
+            const link = document.createElement('a');
+            link.href = src;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>

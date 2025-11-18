@@ -1,0 +1,90 @@
+{
+  "script_name": "script_7",
+  "source_file": "audio/matt 3.m4a",
+  "clips": [
+    {
+      "clip_number": 1,
+      "filename": "script_7_clip_01.wav",
+      "quote": "A year ago my wife was the one who cooked and I would make a few meals. But when I cook, it's meat sauce and spaghetti, which is once a week.",
+      "matched_text": "A year ago my wife was the one who cooked and I would make a few meals but when I cook it's meat sauce and spaghetti which is once a week",
+      "match_score": 99,
+      "start_time_seconds": 17.32,
+      "end_time_seconds": 33.94,
+      "start_ms": 16820,
+      "end_ms": 34440,
+      "duration_ms": 17620,
+      "padding_ms": 500,
+      "status": "success"
+    },
+    {
+      "clip_number": 2,
+      "filename": "script_7_clip_02.wav",
+      "quote": "We've always been against toxic pans and I never would buy the ceramic ones or any of the other brands that were saying they were non toxic because it still feel... We were already using non toxic pans and I would never buy the ceramic coated ones, even though it seemed like the easiest way to get non stick stick.",
+      "matched_text": "We've always been against toxic pans and I never would buy the ceramic ones or any of the other brands that were saying they were non toxic because it still feel. Excuse me. Read it. We were already using non toxic pans and I would never buy the ceramic coated ones even though it seemed like the easiest way to",
+      "match_score": 94,
+      "start_time_seconds": 59.8,
+      "end_time_seconds": 78.94,
+      "start_ms": 59300,
+      "end_ms": 79440,
+      "duration_ms": 20140,
+      "padding_ms": 500,
+      "status": "success"
+    },
+    {
+      "clip_number": 3,
+      "filename": "script_7_clip_03.wav",
+      "quote": "But I eventually got some really nice stainless steel pans and I really perfected the preheat, the oil or whatever and cooking. So I was already getting more comfortable with cooking because of stainless steel.",
+      "matched_text": "I eventually got some really nice stainless steel pans. And I really perfected the pre heat, the oil or whatever and cooking. So I was already getting more comfortable with cooking because of stainless steel.",
+      "match_score": 99,
+      "start_time_seconds": 88.1,
+      "end_time_seconds": 100.14,
+      "start_ms": 87600,
+      "end_ms": 100640,
+      "duration_ms": 13040,
+      "padding_ms": 500,
+      "status": "success"
+    },
+    {
+      "clip_number": 4,
+      "filename": "script_7_clip_04.wav",
+      "quote": "But stainless steel doesn't make you feel like you're. You're not bringing it with you camping. You're not. It's probably not going to last your whole life because you're going to make it gnarly. It just wasn't the same type of experience.",
+      "matched_text": "steel. But stainless steel doesn't make you feel like you're. You're not bringing it with you camping. you're not, it's probably not gonna last your whole life because you're gonna make it gnarly. It just wasn't the same type of experience by",
+      "match_score": 94,
+      "start_time_seconds": 99.76,
+      "end_time_seconds": 113.22,
+      "start_ms": 99260,
+      "end_ms": 113720,
+      "duration_ms": 14460,
+      "padding_ms": 500,
+      "status": "success"
+    },
+    {
+      "clip_number": 5,
+      "filename": "script_7_clip_05.wav",
+      "quote": "By knowing that everything I cooked on a cast iron was going to be a part of its journey or I could reset it at any time.",
+      "matched_text": "by knowing that everything I cooked on a cast iron was going to be a part of its journey or I could reset it at any time.",
+      "match_score": 100,
+      "start_time_seconds": 112.82,
+      "end_time_seconds": 120.28,
+      "start_ms": 112320,
+      "end_ms": 120780,
+      "duration_ms": 8460,
+      "padding_ms": 500,
+      "status": "success"
+    },
+    {
+      "clip_number": 6,
+      "filename": "script_7_clip_06.wav",
+      "quote": "So I already started getting into cooking because of stainless steel and I was getting more comfortable with non stick that way. And after Teflon was banned from this house, I never tried any other surface because I knew they were all going to be scratched.",
+      "matched_text": "I already started getting into cooking because of stainless steel and I was getting more comfortable with non -stick that way and no, after Teflon was banned from this house I never tried any other surface because I knew they were all going to be scratched",
+      "match_score": 98,
+      "start_time_seconds": 121.34,
+      "end_time_seconds": 138.74,
+      "start_ms": 120840,
+      "end_ms": 139240,
+      "duration_ms": 18400,
+      "padding_ms": 500,
+      "status": "success"
+    }
+  ]
+}

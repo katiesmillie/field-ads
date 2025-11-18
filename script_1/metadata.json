@@ -1,0 +1,31 @@
+{
+  "script_name": "script_1",
+  "source_file": "audio/matt 3.m4a",
+  "clips": [
+    {
+      "clip_number": 1,
+      "quote": "I had had other skillets like Lodge, cheaper, and I never felt connected to it enough to try to figure it out as much as I did with Field, because it felt so beautiful and smooth.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 2,
+      "quote": "And so I think something about that inspired me.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 3,
+      "quote": "I started making scrambled eggs in it. And it was easy and they were nonstick, and it started to give me more and more confidence.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 4,
+      "quote": "I make a fried egg almost every day now. And with the smaller field skillets, you can literally crack an egg or two in some of them, and it keeps a perfect shape of a fried egg and you're done.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 5,
+      "quote": "Cast iron has changed my life. I'm a better dad.",
+      "status": "not_found"
+    }
+  ]
+}

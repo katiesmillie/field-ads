@@ -1,0 +1,31 @@
+{
+  "script_name": "script_10",
+  "source_file": "audio/matt 3.m4a",
+  "clips": [
+    {
+      "clip_number": 1,
+      "quote": "Sometimes I yell, I'll clean it, because I have a thing. Like, I love doing it.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 2,
+      "quote": "I really like knowing that I cleaned it properly and reset it and it's ready to go for the next person. And that doesn't mean it's hard to do or special. It's just the way I've kept the seasoning perfect.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 3,
+      "quote": "You take a pride in cast iron, where you've worked so hard on the seasoning, and you're really proud of it, and it's even and perfect.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 4,
+      "quote": "It's like my efforts made that pan epic.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 5,
+      "quote": "I can clean that thing and be done with it after using it in less than two minutes. No different than scrubbing any other pan.",
+      "status": "not_found"
+    }
+  ]
+}

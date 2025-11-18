@@ -1,0 +1,36 @@
+{
+  "script_name": "script_2",
+  "source_file": "audio/matt 3.m4a",
+  "clips": [
+    {
+      "clip_number": 1,
+      "quote": "I have so much pride in figuring this thing out. That wasn't actually that hard. I just thought it was going to be.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 2,
+      "quote": "I think the start of cooking with cast iron was always scrambled eggs. It seems like that seems to be the test of what non stick means to someone.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 3,
+      "quote": "And I think once you figure out that you can get a nonstick surface from cast iron, then you're not, you know, worried.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 4,
+      "quote": "So I think those gateways led me to cast iron chicken in the oven. It led me to sauteing mushrooms and vegetables.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 5,
+      "quote": "I literally never used three pans at once, or even two. And just the connection to it made me start getting more creative.",
+      "status": "not_found"
+    },
+    {
+      "clip_number": 6,
+      "quote": "It really does make you have some behavioral change.",
+      "status": "not_found"
+    }
+  ]
+}

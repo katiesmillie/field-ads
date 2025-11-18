@@ -1,0 +1,5 @@
+openai-whisper
+pydub
+fuzzywuzzy
+python-Levenshtein
+ffmpeg-python
