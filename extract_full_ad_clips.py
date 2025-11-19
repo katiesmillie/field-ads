@@ -118,7 +118,7 @@ CLIP_EXTRACTIONS = {
     "worth_it": {
         "file": "audio/matt 1.m4a",
         "start": 462.17,   # "Love it more..."
-        "end": 473.77,     # "...it was worth it."
+        "end": 484.86,     # "...cook a meal that they couldn't cook before."
         "padding": 500
     },
     "retaining_flavor": {

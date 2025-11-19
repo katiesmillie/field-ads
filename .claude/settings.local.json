@@ -1,27 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python3:*)",
-      "Bash(sed:*)",
-      "Bash(chmod:*)",
-      "Bash(./extract_all_scripts.sh:*)",
-      "Bash(python:*)",
-      "Bash(find:*)",
-      "Bash(open:*)",
-      "Bash(pip3 install:*)",
-      "Bash(source transcribe_env/bin/activate:*)",
-      "Bash(git rev-parse:*)",
-      "Bash(cat:*)",
-      "Bash(git init:*)",
-      "Bash(git add:*)",
-      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Field Ad Quote Candidates\n\nAdded ad quote extraction and player system:\n- ad_quotes_player.html - Interactive web player for 26 ad quote candidates\n- ad_quote_candidates.md - Organized list of quotes by theme\n- audio_clip_scripts.md - Full context scripts for each quote\n- ad_clips/ - Directory for audio files (to be added)\n\nAlso includes original transcription and extraction tools from interview recordings.\n\n🤖 Generated with Claude Code (https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
-      "Bash(gh:*)",
-      "Bash(pip install:*)",
-      "Bash(git commit:*)",
-      "Bash(git push:*)",
-      "Bash(git remote set-url:*)",
-      "Bash(done)",
-      "Bash(start using it, you want to buy more or use it for everything.\"\n\n- Updated all three clips to show full 39-second text\n- All three clips use the same audio (296.70s - 335.69s from matt 1.m4a)\n- Added missing beginning context for pride_in_what_you_made\n- Added missing beginning and ending for more_meaningful\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+      "Bash(to generation. You might bring it to a friend's house to do something \n  with it and cook a meal that they couldn't cook before.\"\n\nDuration: ~15 sec → ~23 sec (462.17s - 484.86s)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []
